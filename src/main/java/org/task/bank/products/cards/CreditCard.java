@@ -1,4 +1,4 @@
-package org.task.bank;
+package org.task.bank.products.cards;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

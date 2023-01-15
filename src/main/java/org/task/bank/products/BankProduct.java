@@ -1,4 +1,4 @@
-package org.task.bank;
+package org.task.bank.products;
 
 import java.math.BigDecimal;
 

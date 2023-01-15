@@ -4,8 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.task.bank.CreditCard;
-import org.task.bank.DebitCard;
+import org.task.bank.products.cards.CreditCard;
 
 import java.math.BigDecimal;
 
