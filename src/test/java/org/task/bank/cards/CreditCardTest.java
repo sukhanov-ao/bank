@@ -27,7 +27,7 @@ class CreditCardTest {
     void deposit() {
         BigDecimal depositAmount = new BigDecimal(100);
         creditCard.deposit(depositAmount);
-        assertTrue(creditCard.getBalance().equals(new BigDecimal(1100)));
+        assertEquals(creditCard.getBalance(), new BigDecimal(1100));
         log.info("Баланс на карте равен ожидаемому и составляет {} {}", creditCard.getBalance(), creditCard.getCurrency());
     }
 
@@ -35,7 +35,7 @@ class CreditCardTest {
     void debitingFunds() {
         BigDecimal depositAmount = new BigDecimal(100);
         creditCard.debitingFunds(depositAmount);
-        assertTrue(creditCard.getBalance().equals(new BigDecimal(900)));
+        assertEquals(creditCard.getBalance(), new BigDecimal(900));
         log.info("Баланс на карте равен ожидаемому и составляет {} {}", creditCard.getBalance(), creditCard.getCurrency());
     }
 

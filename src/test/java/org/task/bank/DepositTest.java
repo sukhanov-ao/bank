@@ -8,6 +8,7 @@ import org.task.bank.products.deposits.Deposit;
 
 import java.math.BigDecimal;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class DepositTest {
@@ -28,7 +29,7 @@ class DepositTest {
     void addToDeposit() {
         BigDecimal amountToAdd = new BigDecimal(10000.0);
         deposit.addToDeposit(amountToAdd);
-        assertTrue(deposit.getBalance().equals(new BigDecimal(110000.0)));
+        assertEquals(deposit.getBalance(), new BigDecimal(110000.0));
         log.info("Вклад успешно пополнен на {}", amountToAdd);
         log.info("Баланс вклада составляет: {} {}", deposit.getBalance(), deposit.getCurrency());
     }
